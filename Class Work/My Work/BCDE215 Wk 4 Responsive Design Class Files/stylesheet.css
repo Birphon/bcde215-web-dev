@@ -1,19 +1,58 @@
-/* RESET */
-
-html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, a, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+img,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+a,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
     margin: 0;
     padding: 0;
     border: 0;
 }
- 
+
 * {
     box-sizing: border-box;
 }
 
-
-/* LAYOUT */
-
-nav, main, aside, footer {
+nav,
+main,
+aside,
+footer {
     padding: 1em;
 }
 
@@ -21,16 +60,18 @@ figure {
     margin-bottom: 1em;
 }
 
-
-/* TYPOGRAPHY */
-
 body {
     font-family: Merriweather, serif;
     color: #444;
     line-height: 1.5;
 }
 
-h1, h2, h3, nav, footer, figcaption {
+h1,
+h2,
+h3,
+nav,
+footer,
+figcaption {
     font-family: Oswald, "Helvetica Neue", sans-serif;
     text-transform: uppercase;
     font-weight: bold;
@@ -58,15 +99,14 @@ aside {
     text-align: center;
 }
 
-
-/* COLOUR SCHEME & BORDERS */
-
-header, footer {
+header,
+footer {
     background-color: #1f1712;
     color: #b0ab9b;
 }
 
-nav, aside {
+nav,
+aside {
     background-color: #c4c4c4;
 }
 
@@ -78,14 +118,13 @@ footer a {
     color: #b0ab9b;
 }
 
-.selected, a:hover {
+.selected,
+a:hover {
     color: #f00;
 }
 
-
-/* NAVIGATION */
-
-nav ul, footer ul {
+nav ul,
+footer ul {
     list-style-type: none;
 }
 
@@ -97,16 +136,53 @@ footer li {
     margin: 0 1em;
 }
 
-nav a, footer a {
+nav a,
+footer a {
     text-decoration: none;
 }
-
-
-/* IMAGES & VIDEOS */
 
 img {
     width: 100%;
 }
 
+/* Tablet Size Query */
+@media screen and (max-width: 52em) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 16.5rem 33rem 1fr;
+    }
 
-/* RESPONSIVENESS */
+    header,
+    footer {
+        grid-column: 2/4;
+    }
+
+
+    #header {
+        display: flex;
+    }
+
+    nav {
+        grid-column: 2;
+        grid-row: 2/4;
+    }
+
+    aside {
+        grid-column: 3;
+        grid-row: 2;
+        background-color: white;
+    }
+
+    #feature-box {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #feature-box>* {
+        width: 48%;
+    }
+
+    main {
+        grid-column: 3;
+    }
+}
