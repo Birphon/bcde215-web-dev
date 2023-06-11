@@ -1,0 +1,4 @@
+Portfolio:
+
+This will be a website to showcase my work, my contact and other information about me as a Portfolio Website.
+This will also be a "hub" which will have my django website and ecommerce website linked to it as well
