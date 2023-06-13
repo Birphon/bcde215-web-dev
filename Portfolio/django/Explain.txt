@@ -1,5 +1,0 @@
-I somehow have access to the Ara Pets directory on OneDrive
-    - Pet Showcase
-        - Animal Type
-            - Image
-            - Person's Name

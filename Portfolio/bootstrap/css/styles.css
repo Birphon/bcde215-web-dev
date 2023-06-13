@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    background-color: #212529;
+    color: #fff;
+}
+
+.navbar-dark .navbar-brand {
+    color: #fff;
+}
+
+.nav-link {
+    color: #fff;
+}
+
+.nav-link:hover {
+    color: #f8f9fa;
+}
+
+.container {
+    padding-top: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #fff;
+}
+
+p,
+ol,
+ul {
+    color: #f8f9fa;
+}
+
+.alert {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    .navbar-collapse {
+        margin-top: 10px;
+    }
+}
