@@ -4,7 +4,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <title>Webserver Install</title>
+    <title>Tutorial: Ecommerce</title>
     <link rel="stylesheet" href="css/styles.css">
     <link href="themes/prism.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
@@ -45,47 +45,6 @@
         </div>
     </nav>
 
-    <!-- Main Content -->
-    <div class="container mt-4">
-        <section class="row">
-            <section class="col-lg-8 offset-lg-2">
-                <!-- Section: Introduction -->
-                <section>
-                    <h1 class="text-center">Amazon EC2 Web Server Installation Instructions</h1>
-                    <p class="text-center">3 April 2023, Chris Bartlett</p>
-                    <p class="text-center"><span class="alert">Read each section of instructions carefully before
-                            starting!</span></p>
-                </section>
-
-                <section>
-                    <h2>Indented Lines</h2>
-                    <p>Indented lines of text below that use the Courier New font are lines of code that you could copy
-                        and
-                        paste into the terminal session when connected to your instance. To paste copied code, right
-                        click
-                        on the PuTTY terminal window. However, please do not simply copy-paste-copy-paste… - you need to
-                        understand what you are doing, so take your time and read the instructions carefully.</p>
-                </section>
-
-                <section>
-                    <h3>Update Linux packages</h3>
-                    <p>Make sure your instance has an up-to-date list of program packages that are available for
-                        installation:</p>
-                    <pre>sudo apt update</pre>
-                </section>
-
-                <section>
-                    <h3>Install the Apache webserver program</h3>
-                    <p>Install Apache using apt:</p>
-                    <pre>sudo apt install -y apache2</pre>
-                    <p>Get the public IP address of your Amazon EC2 server instance (in the EC2 console) and go to it
-                        with
-                        your web browser. The “Apache2 Ubuntu Default Page” should show in your browser. If it does, you
-                        have set up a web server. Well, how easy was that?</p>
-                </section>
-            </section>
-        </section>
-    </div>
     <script src="js/navbar.js"></script>
     <script src="prism.js"></script>
 </body>
