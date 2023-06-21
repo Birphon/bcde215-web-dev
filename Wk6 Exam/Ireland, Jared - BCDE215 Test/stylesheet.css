@@ -89,26 +89,25 @@ body {
     color: #333;
 }
 
+h2, h3, h4{
+    color: #545cd9;
+}
+
+.selected, a:hover {
+    color: #ff7f00;
+}
+
 nav, footer {
     background-color: #1f235f;
     color: #fff;
 }
 
 header {
-    background-color: #666;
+    background-color: #666; /*Used an Online Colour Picker*/
     color: #fff;
 }
-
-h2, h3, h4{
-    color: #545cd9;
-}
-
 nav a, footer a {
     color: #fff;
-}
-
-.selected, a:hover {
-    color: #ff7f00;
 }
 
 .container > div {
@@ -121,11 +120,11 @@ main > h1 {
     color: #545cd9;
 }
 
-@media screen and (min-width: 66em) {
+@media screen and (min-width: 65em) {
 
     body {
         display: grid;
-        grid-template-columns: 16rem 16rem 16rem 16rem 1fr;
+        grid-template-columns: 16rem 16rem 16rem 16rem 1fr;/*(16x4)+1=65*/
     }
 
     header {
@@ -210,7 +209,7 @@ main > h1 {
 
 @media screen and (min-width: 98em) {
     body {
-        grid-template-columns: 1fr 24em 48em 24em 1fr;
+        grid-template-columns: 1fr 24em 48em 24em 1fr; /*(24x2)+48+(1x2)=98*/
     }
 
     header {
